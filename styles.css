@@ -1,0 +1,263 @@
+/* Master style */
+html{
+    height:100%;
+}
+body{
+    background-image: url("images/background2.jpg");
+    margin: 0px;
+    font-family: "Pontano Sans", sans-serif;
+
+    display:flex;
+    flex-direction: column;
+    min-height:100%
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav bar style*/
+.navigationBar{
+    font-size: 120%;
+    background-image: linear-gradient(black,rgba(0, 0, 0, 0.253));
+    display:flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    transition: top 0.3s;
+    padding: 36px;
+    text-transform: uppercase;
+}
+
+.left-side{
+    color: whitesmoke;
+}
+
+.right-side{
+    display:flex;
+}
+.navigationBar > .right-side > div {
+    margin-right: 20px;
+}
+
+.navigationBar a{
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navBar-links a:hover{
+    
+    color: orange;
+}
+
+.wellcome-message {
+    
+    font-weight: lighter;
+    font-size: 150%;
+    text-align: center;
+    color: whitesmoke;
+    
+}
+
+.orange-you{
+    color: orange;
+    
+}
+
+
+
+/*Portfolio Style*/
+.portfolio-items {
+    margin: 36px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-img-backround {
+    height: 300px;
+    width: 100%;
+    background-size: cover; /*croping the images to same size*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text{
+    position:absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text .subtitle{
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+}
+
+/*specify selector*/
+.img-text:hover .subtitle {
+    color: whitesmoke;
+}
+
+/*darken the image */
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/*About Page*/
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image img {
+    width: 50%;
+    height:auto;
+    padding:36px;
+    
+}
+
+.profile-content {
+    color: whitesmoke;
+}
+
+/*footer*/
+
+.footer {
+    color:whitesmoke;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+    margin-top:auto;
+    background-color: black;
+    width: 100%;
+    height: 20px;
+}
+
+/*Conatct me page*/
+
+.image-contact img {
+    width: 50%;
+    height:auto;
+    padding:36px;
+}
+
+.image-contact{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.contact-form-side{
+    color: whitesmoke;
+    text-align:center;
+}
+
+.contact-form {
+    display:grid;
+    grid-template-rows: 1fr;
+}
+
+.form-info{
+    color:whitesmoke;
+}
+
+input{
+    background-color: rgba(136,133,133,0.5);
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    padding:20px;
+    margin:10px;
+    width: 70%;
+    font-size: large;
+
+}
+
+input::placeholder{
+    color:whitesmoke;
+    font-size: large;
+}
+
+textarea{
+    background-color: rgba(136,133,133,0.5);
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    padding:20px;
+    margin:10px;
+    width: 70%;
+    font-size: larger;
+}
+
+textarea::placeholder{
+    color: whitesmoke;
+    font-size: larger;
+}
+
+.submit{
+    
+    color:whitesmoke;
+    background-color: none;
+    transition: background-color 0.5s;
+    background: none;
+    outline:none;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    text-justify: center;
+    width: 40%;
+    padding:5px;
+    height: 33px;
+    border: 2px solid rgba(136,133,133,0.5);
+}
+
+.submit:hover {
+    background-color:orange;
+    cursor: pointer;
+}
+
+/*Project pages and content*/
+
+.two-column-projects {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-portfolio img {
+    width: 25%;
+}
+
+.image-portfolio {
+    margin:36px;
+}
+
+.content h1{
+    color:whitesmoke;
+    text-align: center;
+}
+
+.project-right-side {
+    color:whitesmoke;
+    
+}
